@@ -10,8 +10,8 @@ cp custom-w2thive /var/ossec/integrations/custom-w2thive
 # Adjusting Permissions
 sudo chmod 755 /var/ossec/integrations/custom-w2thive.py
 sudo chmod 755 /var/ossec/integrations/custom-w2thive
-sudo chown wazuh-user:wazuh-user /var/ossec/integrations/custom-w2thive.py
-sudo chown wazuh-user:wazuh-user /var/ossec/integrations/custom-w2thive
+sudo chown root:wazuh /var/ossec/integrations/custom-w2thive.py
+sudo chown root:wazuh /var/ossec/integrations/custom-w2thive
 
 # Echo Next Steps
 
