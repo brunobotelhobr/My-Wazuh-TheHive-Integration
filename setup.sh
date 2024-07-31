@@ -14,9 +14,11 @@ sudo chown root:wazuh /var/ossec/integrations/custom-w2thive.py
 sudo chown root:wazuh /var/ossec/integrations/custom-w2thive
 
 # Echo Next Steps
-
+echo ""
 echo "#1 Edit: /var/ossec/etc/ossec.conf :"
-
+echo ""
+echo "!!! Adjust your Hook URL and API Key."
+echo ""
 echo "<ossec_config>"
 echo "…"
 echo "  <integration>"
@@ -27,6 +29,7 @@ echo "    <alert_format>json</alert_format>"
 echo "  </integration>"
 echo "…"
 echo "</ossec_config>"
-
+echo ""
 echo "#2. Restart the manager to apply the changes:"
-ehco "sudo systemctl restart wazuh-manager"
+echo "sudo systemctl restart wazuh-manager"
+echo ""
